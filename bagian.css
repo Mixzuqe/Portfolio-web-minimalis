@@ -1175,7 +1175,13 @@
     .hero-tag { font-size: clamp(0.65rem, 1.5vw, 0.8rem); padding: 6px 12px; margin-bottom: 20px; }
     .hero-cta { font-size: 0.85rem; padding: 12px 24px; width: fit-content; margin: 0 auto; }
 
-    .hero-right { display: none; }
+    /* PERBAIKAN: .hero-right diubah agar tampil di mobile */
+    .hero-right { 
+      display: flex; 
+      justify-content: center;
+      width: 100%;
+      margin-top: 32px; 
+    }
 
     .blob { animation: floatBlob 12s ease-in-out infinite alternate; }
     .blob-1 { width: 250px; height: 250px; top: 10%; right: -50px; }
@@ -1343,6 +1349,13 @@
     .hero-tag { font-size: 0.7rem; margin-bottom: 16px; }
     .hero-cta { font-size: 0.8rem; padding: 10px 20px; gap: 8px; }
     .hero-cta .arrow { font-size: 0.9rem; }
+
+    /* PERBAIKAN: Penyesuaian ukuran maksimal kartu profil di smartphone */
+    .hero-card-wrap {
+      width: 100%;
+      max-width: 320px;
+      margin: 0 auto;
+    }
 
     .blob-1 { width: 200px; height: 200px; }
     .blob-2 { width: 140px; height: 140px; }
